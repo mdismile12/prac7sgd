@@ -1,0 +1,15 @@
+cmd:-
+winget install WinFlexBison.win_flex_bison --silent --accept-source-agreements --accept-package-agreements
+cmd:-
+Copy-Item "C:\Users\moham\AppData\Local\Microsoft\WinGet\Packages\WinFlexBison.win_flex_bison_Microsoft.Winget.          
+  Source_8wekyb3d8bbwe\win_flex.exe" "C:\Users\moham\AppData\Local\Microsoft\WinGet\Packages\WinFlexBison.                   
+  win_flex_bison_Microsoft.Winget.Source_8wekyb3d8bbwe\flex.exe"                                                             
+                                                                                                                             
+    # Copy win_bison.exe to bison.exe                                                                                        
+    Copy-Item "C:\Users\moham\AppData\Local\Microsoft\WinGet\Packages\WinFlexBison.win_flex_bison_Microsoft.Winget.          
+  Source_8wekyb3d8bbwe\win_bison.exe" "C:\Users\moham\AppData\Local\Microsoft\WinGet\Packages\WinFlexBison.                  
+  win_flex_bison_Microsoft.Winget.Source_8wekyb3d8bbwe\bison.exe"
+
+  cmd check:-
+  flex --version                                                                                                           
+    bison --version

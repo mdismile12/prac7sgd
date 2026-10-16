@@ -1,0 +1,57 @@
+========================================================================
+GTU SEM 7 MAD (Sub Code: 3170726) - Practical 6
+Title: Create an Android application to demonstrate Explicit and Implicit Intents.
+========================================================================
+
+STEPS TO RUN IN ANDROID STUDIO (COLLEGE PC):
+------------------------------------------------------------------------
+1. Open Android Studio and click on "New Project".
+2. Select "Empty Views Activity" template.
+3. Configure project:
+   - Name: prac_6
+   - Package Name: com.example.prac_6
+   - Language: Java
+   - Minimum SDK: API 21 or default
+4. Click "Finish".
+
+5. UPDATE MANIFEST FILE (CRITICAL):
+   - Open app -> src -> main -> AndroidManifest.xml.
+   - Replace completely with 'AndroidManifest.xml'.
+   - (Crucial: Must declare PageHome activity and CALL_PHONE permission, otherwise app will crash upon login!)
+
+6. UPDATE / CREATE LAYOUT XML FILES:
+   - File 1: app -> src -> main -> res -> layout -> activity_main.xml
+     (Replace with 'activity_main.xml')
+   - File 2: In 'res/layout', Right-click -> New -> Layout Resource File.
+     Name: home_page.xml
+     (Replace with 'home_page.xml')
+
+7. UPDATE / CREATE JAVA FILES:
+   - File 1: app -> src -> main -> java -> com.example.prac_6 -> MainActivity.java
+     (Replace with 'MainActivity.java')
+   - File 2: In 'com.example.prac_6' package, Right-click -> New -> Java Class.
+     Name: PageHome
+     (Replace with 'PageHome.java')
+
+8. RUN THE APPLICATION:
+   - Click Run (Shift + F10).
+   - Login Credentials:
+     Email: md@gmail.com
+     Password: 123456
+
+------------------------------------------------------------------------
+EXPECTED OUTPUT / SCREENSHOT GUIDE FOR PRACTICAL WORKBOOK:
+------------------------------------------------------------------------
+Total Screenshots: 3
+
+1. Screenshot 1 (Login Screen - Explicit Intent trigger):
+   - Screen displays "Welcome Back", Email field, Password field, and Login button.
+   - User enters: Email: md@gmail.com, Password: 123456.
+
+2. Screenshot 2 (Home Page - Explicit Intent result):
+   - On successful login, Explicit Intent navigates to the second activity (PageHome).
+   - Displays "Welcome Home", "Explore your dashboard...", and "CALL" button.
+
+3. Screenshot 3 (Dialer / Call Screen - Implicit Intent result):
+   - Clicking "CALL" triggers Implicit Intent to open phone dialer/call screen with "1234567890".
+========================================================================
